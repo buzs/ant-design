@@ -15,6 +15,58 @@ timeline: true
 
 ---
 
+## 4.16.3
+
+`2021-06-14`
+
+- 🐞 Fix the mistake that tooltip mount on wrong dom, when getPopupContainer of tooltip's props is undefined or null. [#30963](https://github.com/ant-design/ant-design/pull/30963) [@ymrdf](https://github.com/ymrdf)
+- 🐞 Fix Button lost margin between loading icon and text when children is fragment. [#30962](https://github.com/ant-design/ant-design/pull/30962)
+- Table
+  - 🐞 Table adds warning when `filteredKeys` is controlled and not reflecting internal changes. [#30882](https://github.com/ant-design/ant-design/pull/30882) [@wendellhu95](https://github.com/wendellhu95)
+  - 🐞 Fix Table fixed column header hover background. [#30972](https://github.com/ant-design/ant-design/pull/30972)
+- 💄 Adjust Dropdown item content style to make it get more display space. [#30911](https://github.com/ant-design/ant-design/pull/30911)
+- 💄 Fix Menu in dark mode open style affect by light mode. [#30907](https://github.com/ant-design/ant-design/pull/30907)
+- 🐞 Fix Dropdown/DatePicker/Select/Cascader animation direction after auto adjust position. [#30892](https://github.com/ant-design/ant-design/pull/30892)
+- 🌐 Internationalization
+  - 🇵🇱 Fix Polish locale. [#30899](https://github.com/ant-design/ant-design/pull/30899) [@MichalJani](https://github.com/MichalJani)
+
+## 4.16.2
+
+`2021-06-07`
+
+- 🐞 Fix Menu auto overflow with `horizontal` mod breaks by `float` element. [#30879](https://github.com/ant-design/ant-design/pull/30879)
+- Typography
+  - 🐞 Fix the problem that Typography.Paragraph `copyable` will treat `React.Fragment` as an array. [#30869](https://github.com/ant-design/ant-design/pull/30869) [@crazyair](https://github.com/crazyair)
+  - 🐞 Fix Typography incorrect ellipsis width when customize `font-size`. [#30840](https://github.com/ant-design/ant-design/pull/30840)
+- 🐞 Fix Progress `type="circle"` throws error `Rendered more hooks than during the previous render` sometimes. [#30855](https://github.com/ant-design/ant-design/pull/30855)
+- 💄 Optimize Tooltip content width. [#30822](https://github.com/ant-design/ant-design/pull/30822) [@donysukardi](https://github.com/donysukardi)
+- Table
+  - 🛠 Optimize state display logic of select all checkbox in Table. [#30811](https://github.com/ant-design/ant-design/pull/30811) [@kerm1it](https://github.com/kerm1it)
+  - 🐞 Fix Table column which contains filters or sorters cannot work with `onClick` and `ellipsis` property. [#30799](https://github.com/ant-design/ant-design/pull/30799)
+- 💄 Fix Dropdown Item with link color style and click icon can also trigger link effect now. [#30802](https://github.com/ant-design/ant-design/pull/30802)
+- 💄 Remove duplicated css reset styles for render performance. [#30660](https://github.com/ant-design/ant-design/pull/30660) [@renzhao1113](https://github.com/renzhao1113)
+- TypeScript
+  - 🤖 Adjust Form, Input, Locale, PageHeader component definition. [#30776](https://github.com/ant-design/ant-design/pull/30776) [@qqabcv520](https://github.com/qqabcv520)
+
+## 4.16.1
+
+`2021-05-30`
+
+- Menu
+  - 🐞 Fix overflow not work as expect. [#30672](https://github.com/ant-design/ant-design/pull/30672)
+  - 🐞 Fix warning of `Can't perform a React state update on an unmounted component` when unmounted. [#30678](https://github.com/ant-design/ant-design/pull/30678)
+  - 🐞 Fix `inline` mode not correct handle ellipsis when `icon` not provided. [#30682](https://github.com/ant-design/ant-design/pull/30682)
+- Typography
+  - 🐞 Fix Typography.Text trigger ResizeObserver when css ellipsis is validate. [#30664](https://github.com/ant-design/ant-design/pull/30664)
+  - 🐞 Fix `ellipsis` not work when HMR take effect in dev env. [#30754](https://github.com/ant-design/ant-design/pull/30754)
+- Table
+  - 🐞 Fix Table.Summary missing border style when `sticky` and `bordered` enabled. [#30666](https://github.com/ant-design/ant-design/pull/30666)
+  - 🐞 Fix column align with sorter and filter. [#30744](https://github.com/ant-design/ant-design/pull/30744)
+- 🐞 Fix Collapse expandIconPosition="right" not working. [#30680](https://github.com/ant-design/ant-design/pull/30680) [@hongdeyuan](https://github.com/hongdeyuan)
+- TypeScript
+  - 🤖 Export TableColumnsType type.[#30747](https://github.com/ant-design/ant-design/pull/30747) [@alwaysloseall](https://github.com/alwaysloseall)
+  - 🤖 Export TreeDataNode type. [#30745](https://github.com/ant-design/ant-design/pull/30745) [@alwaysloseall](https://github.com/alwaysloseall)
+
 ## 4.16.0
 
 `2021-05-24`
